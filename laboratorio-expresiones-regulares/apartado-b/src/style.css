@@ -1,0 +1,45 @@
+@import "https://unpkg.com/open-props";
+
+body {
+  min-height: 100vh;
+  background-image: var(--gradient-9);
+}
+
+textarea,
+button {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.seccion-informacion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  margin-top: 50px;
+  gap: 1rem;
+}
+
+.imagen-capturada {
+  max-width: 200px;
+  min-height: 350px;
+  text-align: center;
+  align-content: center;
+  border-radius: 6px;
+  box-shadow: var(--shadow-1);
+  animation: var(--animation-fade-in-bloom) forwards;
+  animation-duration: 0.5s;
+
+  & img {
+    border-radius: 6px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: var(--gradient-23);
+  }
+
+  .imagen-capturada {
+    background-color: white;
+  }
+}

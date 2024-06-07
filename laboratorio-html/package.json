@@ -1,0 +1,14 @@
+{
+  "name": "laboratorio-html",
+  "version": "1.0.0",
+  "description": "Laboratorio HTML",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Pretel",
+  "license": "ISC",
+  "dependencies": {
+    
+  }
+}

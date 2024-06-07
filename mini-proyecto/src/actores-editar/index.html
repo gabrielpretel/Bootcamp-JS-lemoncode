@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../reseteo.css" />
+    <link rel="stylesheet" href="../estilos.css" />
+    <title>Editar actor</title>
+  </head>
+  <body>
+    <main class="contenedor">
+      <div class="contenedor-h1">
+        <h1 class="cabecera-h1">Editar actor</h1>
+      </div>
+      <div class="card">
+        <form id="formulario" class="contenedor-formulario">
+          <div class="grupo-formulario">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="grupo-formulario">
+            <label for="movies">Películas</label>
+            <input type="text" id="movies" name="movies" required />
+          </div>
+          <div class="grupo-formulario">
+            <label for="bio">Biografía</label>
+            <textarea name="bio" id="bio" rows="4" required></textarea>
+          </div>
+          <div class="grupo-formulario">
+            <label for="image">Fotografía</label>
+            <input type="text" id="image" name="image" required />
+          </div>
+          <button type="submit">Actualizar actor</button>
+        </form>
+      </div>
+      <button class="button-back" type="button">Volver a la lista</button>
+    </main>
+  </body>
+  <script type="module" src="./actores-editar.ts"></script>
+</html>

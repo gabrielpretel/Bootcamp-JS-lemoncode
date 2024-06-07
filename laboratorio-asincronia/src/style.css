@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #f59a00;
+  --secondary-color: #ffebcc;
+  --black: #00101f;
+  --primary-font: "DM Sans", sans-serif;
+}
+
+body {
+  background-image: url("https://imagenes.elpais.com/resizer/XPMGcgR4MAXPZVNx7Lwm25QXeuo=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/Z7E5DB4PUBERDGJNYIHFZTYT7Q.png"),
+    linear-gradient(to right top, #ffeccc, #ffecdf, #fff1f4, #fff8ff, #ffffff);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  min-height: 100vh;
+  font-family: var(--primary-font);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: var(--black);
+  font-weight: 1000;
+  color: var(--black);
+  opacity: 0.9;
+}
+
+img {
+  mix-blend-mode: unset;
+  max-height: 200px;
+  padding-top: 10px;
+  text-align: center;
+  opacity: 0.95;
+  align-self: center;
+  transition: rotate ease-in 0.3s;
+
+  &.logo:hover {
+    rotate: 9deg;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+
+  &:hover {
+    background-color: #98734a;
+  }
+}
+
+input#search {
+  background-color: white;
+}
+
+.listado-personajes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  transition: all ease-in 1s;
+
+  & *:only-child {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.contenedor-personaje {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  height: 500px;
+  /* max-height: 500px; */
+  text-align: center;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  margin-bottom: 2rem;
+
+  & p {
+    padding: 10px;
+    margin: 0;
+  }
+
+  & img {
+    align-self: center;
+    transition: all ease-in 0.2s;
+  }
+
+  & img:hover {
+    transform: scale(1.1);
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .nombre {
+    color: #98734a;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+
+  .especialidad {
+    background-color: var(--secondary-color);
+  }
+
+  .habilidades {
+    background-color: var(--primary-color);
+    height: 100%;
+    flex-grow: 1;
+    align-content: center;
+    border-radius: 0px 0px 6px 6px;
+
+    & p::first-letter {
+      display: block;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.texto-no-encontrado {
+  font-weight: 700;
+}

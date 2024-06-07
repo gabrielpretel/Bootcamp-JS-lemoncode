@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../reseteo.css" />
+    <link rel="stylesheet" href="../estilos.css" />
+    <title>Crear actor</title>
+  </head>
+  <body>
+    <main class="contenedor">
+      <div class="contenedor-h1">
+        <h1 class="cabecera-h1">Crear actor</h1>
+      </div>
+      <div class="card">
+        <form id="formulario" class="contenedor-formulario">
+          <div class="grupo-formulario">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="grupo-formulario">
+            <label for="movies">Películas</label>
+            <input type="text" id="movies" name="movies" required />
+          </div>
+          <div class="grupo-formulario">
+            <label for="bio">Biografía</label>
+            <textarea name="bio" id="bio" rows="4" required></textarea>
+          </div>
+          <div class="grupo-formulario">
+            <label for="image">Fotografía</label>
+            <input type="text" id="image" name="image" required />
+          </div>
+          <button type="submit">Crear actor</button>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="./actores-crear.ts"></script>
+</html>
